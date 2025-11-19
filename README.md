@@ -15,11 +15,11 @@ To replicate this analysis, you must have the R programming language installed. 
 # Required R Libraries
 install.packages(c("tidyverse", "broom", "car", "lmtest", "zoo"))
 
-📈 Methodology and Key Steps
+# 📈 Methodology and Key Steps
 
 The analysis, documented in Project_car.qmd, follows a structured data science pipeline:
 
-1. Data Preparation and Feature Engineering
+1 Data Preparation and Feature Engineering
 
 Cleaning: Numeric features like Mileage, Levy, and Engine.volume were cleaned by removing non-numeric characters and standardizing formats.
 
@@ -47,7 +47,7 @@ Final Model: The chosen GLM incorporates main effects, polynomial terms (I(Engin
 
 Selection Criteria: Models were evaluated and selected using AIC (Akaike Information Criterion) and BIC (Bayesian Information Criterion).
 
-4. Model Diagnostics
+# 4. Model Diagnostics
 
 Rigorous diagnostic checks were performed to evaluate the final model's adherence to classical assumptions for Generalized Linear Models (GLMs).
 
@@ -55,21 +55,21 @@ Multicollinearity Assessment
 
 Test: The Variance Inflation Factor (VIF) was used.
 
-Result: The VIF analysis indicated the presence of some degree of multicollinearity among the predictors. This suggests that while the model is predictive, the individual coefficient interpretations should be made cautiously, as their values may be unstable.
+** Result: The VIF analysis indicated the presence of some degree of multicollinearity among the predictors. This suggests that while the model is predictive, the individual coefficient interpretations should be made cautiously, as their values may be unstable.
 
-Homoscedasticity Assessment
+# Homoscedasticity Assessment
 
 Test: The Breusch-Pagan Test (bptest) was conducted on the residuals.
 
 Result: The test was statistically significant (p≤0.05), indicating that the assumption of homoscedasticity was violated. The model exhibits heteroscedasticity , meaning the spread of the errors is not uniform.
 
-Normality of Residuals Assessment
+## Normality of Residuals Assessment
 
 Test: The Kolmogorov-Smirnov Test (ks.test) was applied to the residuals.
 
 Result: The test returned a statistically significant result (p≤0.05), leading to the rejection of the null hypothesis that the residuals are normally distributed. This indicates that the normality assumption was violated.
 
-Summary of Diagnostic Findings
+## Summary of Diagnostic Findings
 
 Multicollinearity: Some Present (VIF). Implication: Coefficient estimates may be unstable.
 
@@ -77,7 +77,7 @@ Homoscedasticity: Violated (Breusch-Pagan Test). Implication: Standard errors an
 
 Normality of Residuals: Violated (Kolmogorov-Smirnov Test). Implication: Inference (confidence intervals) may be inaccurate.
 
-💡 Key Findings
+# 💡 Key Findings
 
 The model achieved a Pseudo-R-squared of approximately 44.8% on the log-transformed price.
 
@@ -85,7 +85,7 @@ Age and Mileage are consistently strong predictors, showing the expected negativ
 
 The use of polynomial and interaction terms significantly improved model fit over a simple linear model.
 
-🚀 Future Work
+# 🚀 Future Work
 
 Despite the violations of classical assumptions, the model captures a substantial portion of the variance. These diagnostic results strongly reinforce the recommendation for future work to incorporate more robust modeling techniques:
 
