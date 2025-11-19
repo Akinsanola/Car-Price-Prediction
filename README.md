@@ -3,8 +3,8 @@ This repository contains the R code for a comprehensive data analysis and modeli
 
 ### 🗄️ Project Files
 
-* `Car_Price _Prediction.qmd`: The main analysis file containing all R code for data cleaning, EDA, model building, and diagnostics.
-* `Car_Price _Prediction.pdf`: The final academic report detailing the methodology, results, model critiques, and future work.
+* `Car_Price_Prediction.qmd`: The main analysis file containing all R code for data cleaning, EDA, model building, and diagnostics.
+* `Car_Price_Prediction.pdf`: The final academic report detailing the methodology, results, model critiques, and future work.
 * `Data/CarPrice.csv`: https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge
 
 ### 🛠️ Setup and Prerequisites
