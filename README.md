@@ -3,9 +3,9 @@ This repository contains the R code for a comprehensive data analysis and modeli
 
 ### 🗄️ Project Files
 
-* `Project_car.qmd`: The main analysis file containing all R code for data cleaning, EDA, model building, and diagnostics.
-* `Ololade_Akinsanola_Project.pdf`: The final academic report detailing the methodology, results, model critiques, and future work.
-* `Data/CarPrice.csv`: The raw dataset used for the analysis.
+* `Car_Price _Prediction.qmd`: The main analysis file containing all R code for data cleaning, EDA, model building, and diagnostics.
+* `Car_Price _Prediction.pdf`: The final academic report detailing the methodology, results, model critiques, and future work.
+* `Data/CarPrice.csv`: https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge
 
 ### 🛠️ Setup and Prerequisites
 
@@ -55,7 +55,7 @@ Multicollinearity Assessment
 
 Test: The Variance Inflation Factor (VIF) was used.
 
-** Result: The VIF analysis indicated the presence of some degree of multicollinearity among the predictors. This suggests that while the model is predictive, the individual coefficient interpretations should be made cautiously, as their values may be unstable.
+Result: The VIF analysis indicated the presence of some degree of multicollinearity among the predictors. This suggests that while the model is predictive, the individual coefficient interpretations should be made cautiously, as their values may be unstable.
 
 # Homoscedasticity Assessment
 
